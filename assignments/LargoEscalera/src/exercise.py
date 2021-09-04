@@ -3,8 +3,10 @@ def main():
     #escribe tu código abajo de esta línea
     altura= float(input("Altura: "))
     angulo= float(input("Ángulo: "))
-    largo=round(altura/math.sin(math.radians(angulo))
-    print("El largo es: "+str(largo))
+    angulorad=math.radians(angulo)
+    largo=altura/math.sin(angulorad)
+    print("El largo es: "+str(math.ceil(largo)))
+   
 
 
 
