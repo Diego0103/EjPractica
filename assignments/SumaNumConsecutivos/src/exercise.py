@@ -11,8 +11,10 @@ def main():
     #escribe tu código abajo de esta línea
     n=int(input("Dame un número: ")
     suma=0
-    if n>0:
-        for i in range(1,n+1):
+    while n>0:
+        suma=suma+n
+        n=int(input("Dame un número: "))
+    print(suma)
             
 
 
